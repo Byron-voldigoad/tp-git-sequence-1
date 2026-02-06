@@ -1,7 +1,7 @@
-// Affiche un message de bienvenue
- #include <iostream>
+ // Affiche un message de bienvenue
+ #include "fonction-bienvenue.h"
  int main()
  {
- std::cout << "Bienvenue le monde !" << std::endl;
+ afficherBienvenue();
  return 0;
  }
