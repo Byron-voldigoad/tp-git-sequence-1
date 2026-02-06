@@ -1,30 +1,15 @@
- # Bienvenue
- Programme C++ qui affiche "Bienvenue le monde !" en utilisant la fonction
- `afficherBienvenue()`.
+```sh
 
-  ```sh
-# Reconstruction complète du projet (nettoyage + compilation)
-$ make rebuild
-Fabrication du programme : bienvenue
+Reconstruction du projet
+$ make rebuild Fabrication du programme : bienvenue
 
-# Suppression des anciens fichiers objets pour garantir une compilation propre
-rm -f *.o
+Exemple d'exécution avec les paramètres par défaut (v1.3)
+$ ./bienvenue Bienvenue le monde ! ```
 
-# Compilation des fichiers sources (.cpp) en fichiers objets (.o)
-g++ -c -Wall -std=c++11 bienvenue.cpp
-g++ -c -Wall -std=c++11 fonction-bienvenue.cpp
+## Prototype de la fonction Le fichier header définit désormais des paramètres par défaut pour le message et le nombre d'affichages :
 
-# Édition de liens : assemblage des fichiers objets pour créer l'exécutable final
-g++ -o bienvenue  bienvenue.o fonction-bienvenue.o
+```cpp #ifndef FONCTION_BIENVENUE_H #define FONCTION_BIENVENUE_H #include <string>
 
-# Exécution du programme résultant
-$ ./bienvenue
-Bienvenue le monde !
- ```
- Le contenu d'un fichier source C++ :
- ```cpp
- #ifndef FONCTION_BIENVENUE_H
- #define FONCTION_BIENVENUE_H
- void afficherBienvenue();
- #endif // FONCTION_BIENVENUE_H
- ```
+// v1.3 : Support du nombre d'affichages void afficherBienvenue(std::string message = "Bienvenue le monde !", int nbAffichage = 1);
+
+#endif // FONCTION_BIENVENUE_H ```
