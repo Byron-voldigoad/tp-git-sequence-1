@@ -1,9 +1,7 @@
-#include <iostream>
-
-int main()
-{
-    // Afficher un message de bienvenue
-    std::cout << "Bienvenue dans le TP de gestion de configurations !" << std::endl;
-    
-    return 0;
-}
+// Affiche un message de bienvenue
+ #include <iostream>
+ int main()
+ {
+ std::cout << "Bienvenue le monde !" << std::endl;
+ return 0;
+ }
