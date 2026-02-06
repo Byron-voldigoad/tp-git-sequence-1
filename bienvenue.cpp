@@ -1,4 +1,4 @@
- // Affiche un message de bienvenue
+// Affiche un message de bienvenue
  #include "fonction-bienvenue.h"
  int main()
  {
